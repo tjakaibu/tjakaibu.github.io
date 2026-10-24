@@ -1,7 +1,11 @@
-# 35 Image Carousel
+# Animated Photo Gallery (Also Frustrating)
 
 A Pen created on CodePen.
 
-Original URL: [https://codepen.io/nietoperq/pen/poYbgLL](https://codepen.io/nietoperq/pen/poYbgLL).
+Original URL: [https://codepen.io/oliviale/pen/RwNOPvx](https://codepen.io/oliviale/pen/RwNOPvx).
 
-Image Carousel<br>Project 35 / 50<br><a href="https://learning.oreilly.com/videos/50-projects-in/9781801079976/">50 Projects In 50 Days - HTML, CSS & JavaScript</a>
+Me: Hm look at this
+
+Friend: Wow so frustrating
+
+Me: I guess that's the title

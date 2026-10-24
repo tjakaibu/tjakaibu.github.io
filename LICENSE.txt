@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2026 Weronika (https://codepen.io/nietoperq/pen/poYbgLL)
+Copyright (c) 2026 Olivia Ng (https://codepen.io/oliviale/pen/RwNOPvx)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
