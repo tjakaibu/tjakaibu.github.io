@@ -32,7 +32,7 @@ body {
     flex: 0 0 50%;
   }
 }
-@media (min-width: 950px) {
+@media (min-width: 1200px) {
   .gallery {
     height: 100vh;
   }
