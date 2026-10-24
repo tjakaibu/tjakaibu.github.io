@@ -1,47 +1,44 @@
-const track = document.getElementById("image_track");
+const imageContainer = document.getElementById("imgs");
+const leftBtn = document.getElementById("left");
+const rightBtn = document.getElementById("right");
+const imgs = document.querySelectorAll("#imgs img");
 
-const handleOnDown = (e) => (track.dataset.mouseDownAt = e.clientX);
+const INTERVAL = 3000;
 
-const handleOnUp = () => {
-	track.dataset.mouseDownAt = "0";
-	track.dataset.prevPercentage = track.dataset.percentage;
-};
+let idx = 0;
+document.body.style.backgroundImage = `url('${imageContainer.children[idx].src}')`;
 
-const handleOnMove = (e) => {
-	if (track.dataset.mouseDownAt === "0") return;
+let interval = setInterval(run, INTERVAL);
 
-	const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-		maxDelta = window.innerWidth / 2;
+function run() {
+  idx++;
+  changeImage();
+}
 
-	const percentage = (mouseDelta / maxDelta) * -100,
-		nextPercentageUnconstrained =
-			parseFloat(track.dataset.prevPercentage) + percentage,
-		nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+function changeImage() {
+  if (idx > imgs.length - 1) {
+    idx = 0;
+  } else if (idx < 0) {
+    idx = imgs.length - 1;
+  }
 
-	track.dataset.percentage = nextPercentage;
+  imageContainer.style.transform = `translateX(${-idx * 500}px)`;
+  document.body.style.backgroundImage = `url('${imageContainer.children[idx].src}')`;
+}
 
-	track.animate(
-		{
-			transform: `translate(${nextPercentage}%, -50%)`
-		},
-		{ duration: 3000, fill: "forwards" }
-	);
+function resetInterval() {
+  clearInterval(interval);
+  interval = setInterval(run, INTERVAL);
+}
 
-	for (const image of track.getElementsByClassName("image")) {
-		image.animate(
-			{
-				objectPosition: `${100 + nextPercentage}% center`
-			},
-			{ duration: 3000, fill: "forwards" }
-		);
-	}
-};
+rightBtn.addEventListener("click", () => {
+  idx++;
+  changeImage();
+  resetInterval();
+});
 
-window.onmousedown = (e) => handleOnDown(e);
-window.ontouchstart = (e) => handleOnDown(e.touches[0]);
-
-window.onmouseup = (e) => handleOnUp(e);
-window.ontouchend = (e) => handleOnUp(e.touches[0]);
-
-window.onmousemove = (e) => handleOnMove(e);
-window.ontouchmove = (e) => handleOnMove(e.touches[0]);
+leftBtn.addEventListener("click", () => {
+  idx--;
+  changeImage();
+  resetInterval();
+});

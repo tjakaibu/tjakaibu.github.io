@@ -3,36 +3,24 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Sliding Image Track</title>
+    <title>35 Image Carousel</title>
     <link rel="stylesheet" href="./style.css">
 
   </head>
     
   <body>
-  <div id="image_track" data-mouse-down-at="0" data-prev-percentage="0">
-
-	<img class="image" src="https://images.unsplash.com/photo-1505515888495-c1897b0b5740?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Richly colored building with a beautiful sky" draggable="false" />
-
-	<img class="image" src="https://images.unsplash.com/photo-1521464302861-ce943915d1c3?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Golden Gate bridge at golden hour" draggable="false" />
-
-	<img class="image" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="orange petaled flowers" draggable="false" />
-
-	<img class="image" src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gray turntable playing" draggable="false" />
-
-	<img class="image" src="https://images.unsplash.com/photo-1517784229726-7b866d820438?q=80&w=1733&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="group of penguin" draggable="false" />
-
-	<img class="image" src="https://images.unsplash.com/photo-1481414981591-5732874c7193?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="high-angle photography of stairs" draggable="false" />
-
-	<img class="image" src="https://images.unsplash.com/photo-1625794084867-8ddd239946b1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="close-up photography of dog" draggable="false" />
-
-	<img class="image" src="https://images.unsplash.com/photo-1504275107627-0c2ba7a43dba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="assorted color lockers" draggable="false" />
-
-	<img class="image" src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="brown coated monkey on branch" draggable="false" />
-
-	<img class="image" src="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="a mountain range with a lake in the foreground" draggable="false" />
-
-	<img class="image" src="https://images.unsplash.com/photo-1532798210189-ca8e366884b9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="low angle photography of gray concrete building at day time" draggable="false" />
-
+  <div class="carousel">
+  <div class="image-container" id="imgs">
+    <img src="https://images.unsplash.com/photo-1504333638930-c8787321eee0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1597617847923-ca1fdbacc0b1?q=80&w=1058&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+  </div>
+  <div class="buttons-container">
+    <button class="btn" id="left">
+      < prev</button>
+        <button class="btn" id="right">next ></i></button>
+  </div>
 </div>
     <script  src="./script.js"></script>
 

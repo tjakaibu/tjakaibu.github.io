@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2026 Harshit Kumar Singh (https://codepen.io/haptichash/pen/rNRKNPE)
+Copyright (c) 2026 Weronika (https://codepen.io/nietoperq/pen/poYbgLL)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
